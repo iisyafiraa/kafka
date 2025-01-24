@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message ProductSale {
+    string transaction_id = 1;
+    string sale_date = 2;
+    string product = 3;
+    string category = 4;
+    double unit_price = 5;
+    int32 units_sold = 6;
+    double total_sales = 7;
+}

@@ -1,0 +1,1 @@
+SELECT * FROM product_sales_stream EMIT CHANGES;
