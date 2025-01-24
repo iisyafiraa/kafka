@@ -1,4 +1,4 @@
-# Consume and Produce Events from kafka Topic using Python
+# Consume and Produce Events from Kafka Topic using Python
 
 ## Description
 This project demonstrates how to implement a Kafka Producer and Consumer using Python to produce and consume events from a Kafka Topic. The events consist of random product sale data serialized using Protobuf and published to a Kafka topic. The Consumer then consumes this data, deserializes it, and performs basic statistics calculations such as total sales and average sales.
@@ -27,20 +27,10 @@ Here’s the structure of the project:
 ### Run Makefile
 The Makefile includes commands for managing Docker and Kafka services:
 
-#### 1. Run `make docker-build`:
-Build the Jupyter Docker image.
+#### 1. Run `make docker-build`: Build the Jupyter Docker image.
+#### 2. Run `make jupyter`: Start the Jupyter Notebook service.
+#### 3. Run `make kafka`: Start the Kafka Cluster.
+#### 4. Run `make kafka-create-topic`: Create a Kafka topic
+#### 5. Run `make proto`: Create a Proto
 
-#### 2. Run `make jupyter`:
-Start the Jupyter Notebook service.
-
-#### 3. Run `make kafka`:
-Start the Kafka Cluster.
-
-#### 4. Run `make kafka-create-topic`
-Create a Kafka topic
-
-#### 5. Run `make proto`:
-Create a Proto
-
-
-Let me know if you need further adjustments!
+### Let me know if you need further adjustments!
