@@ -7,9 +7,12 @@ This project demonstrates how to implement a Kafka Producer and Consumer using P
 Here’s the structure of the project:
 ```bash
 ├── docker
-│   ├── docker-compose-jupyter.yml       # Docker Compose for Jupyter Notebook
+│   ├── docker-compose-jupyter.yml      # Docker Compose for Jupyter Notebook
 │   ├── docker-compose-kafka.yml        # Docker Compose for Kafka Cluster
 │   └── Dockerfile.jupyter              # Dockerfile for Jupyter with Python dependencies
+├── ksql
+│   ├── 0. stream-ksql.sql              # Create stream KSQL
+│   └── 1. direct-stream-ksql.sql       # Direct stream KSQL
 ├── notebooks
 │   ├── customer.ipynb                  # Notebook for Kafka Consumer
 │   └── producer.ipynb                  # Notebook for Kafka Producer
@@ -24,10 +27,20 @@ Here’s the structure of the project:
 ### Run Makefile
 The Makefile includes commands for managing Docker and Kafka services:
 
-`make docker-build`: Build the Jupyter Docker image.
-`make jupyter`: Start the Jupyter Notebook service.
-`make kafka`: Start the Kafka Cluster.
-`make kafka-create-topic`Create a Kafka topic
-`make proto`: Create a Proto
+#### 1. Run `make docker-build`:
+Build the Jupyter Docker image.
+
+#### 2. Run `make jupyter`:
+Start the Jupyter Notebook service.
+
+#### 3. Run `make kafka`:
+Start the Kafka Cluster.
+
+#### 4. Run `make kafka-create-topic`
+Create a Kafka topic
+
+#### 5. Run `make proto`:
+Create a Proto
+
 
 Let me know if you need further adjustments!
